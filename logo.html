@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechieHub Solutions - Coding Classes</title>
+    <link rel="stylesheet" href="logo.css">
+
+    
+</head>
+<body>
+    <div class="poster">
+        <div class="tiktok-effect"></div>
+        <div class="background-pattern"></div>
+        <div class="code-animation">&lt;/&gt; console.log("hello world");</div>
+        
+        <div class="logo-section">
+            <div class="logo">
+                <div class="circuit-pattern">⚡</div>
+            </div>
+            <div class="brand-name">TECHIE<br>PROS</div>
+        </div>
+
+        <div class="main-headline">
+            <div class="headline-primary">LEARN TO CODE</div>
+            <div class="headline-secondary">Transform Your Future <span class="emoji">🚀</span></div>
+            <div class="subtitle">From Zero to Full-Stack Developer</div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-badge"><a href="about.html"></a>HTML</div>
+            <div class="skill-badge"><a href="about.css"></a>CSS</div>
+            <div class="skill-badge"><a href="about.javascript"></a>JavaScript</div>
+            <div class="skill-badge"><a href="about.python"></a>Python</div>
+            <div class="skill-badge"><a href="about.sql"></a>SQL</div>
+            <div class="skill-badge"><a href="about.React"></a>React</div>
+            <div class="skill-badge"><a href="about.java"></a>Java</div>
+            <div class="skill-badge"><a href="about.php"></a>php</div>
+            <div class="skill-badge"><a href="about.C#"></a>C#</div>
+        </div>
+
+       <div class="cta-section">
+    <a href="https://wa.me/254726894129?text=Hey%20Kevin%2C%20am%20interested%20in%20the%20coding%20lessons" target="_blank">
+        <button class="cta-button">
+            <span class="emoji">💻</span> JOIN NOW <span class="emoji">💻</span>
+        </button>
+    </a>
+</div>
+
+            <div class="contact-info">
+                <div><span class="highlight">✨ Beginner Friendly</span></div>
+                <div><span class="highlight">🎯 Job-Ready Skills</span></div>
+                <div><span class="highlight">👥 Expert Instructors</span></div>
+                <br>
+                <div>📱 <strong>TechieHub Solutions</strong></div>
+                <div>Start Your Coding Journey Today!</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillBadges = document.querySelectorAll('.skill-badge');
+            
+            skillBadges.forEach((badge, index) => {
+                badge.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1) rotate(5deg)';
+                    this.style.background = 'rgba(255,215,0,0.3)';
+                });
+                
+                badge.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                    this.style.background = 'rgba(255,255,255,0.15)';
+                });
+            });
+
+            const headline = document.querySelector('.headline-primary');
+            let originalText = headline.textContent;
+            
+            setInterval(() => {
+                headline.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    headline.style.transform = 'scale(1)';
+                }, 200);
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
